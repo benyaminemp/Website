@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Benyamin Ebrahimpour | AI/ML Engineer & Battery Modelling</title>
+  <meta name="description" content="Portfolio of Benyamin Ebrahimpour — AI/ML engineer with a PhD in Mathematics, specialising in battery modelling, Bayesian inference and neural surrogate models." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brand:#004d40; /* deep teal */
+      --brand-2:#00796b; /* lighter teal */
+      --ink:#263238;
+      --paper:#ffffff;
+      --muted:#607d8b;
+      --bg:#f3f5f7;
+      --card:#ffffff;
+      --ring:rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.6;
+    }
+    header{
+      background:linear-gradient(180deg, var(--brand), #02675a);
+      color:#fff;
+      padding:2.25rem 1rem 1.5rem;
+      text-align:center;
+      position:sticky; top:0; z-index:10;
+      box-shadow:0 6px 24px rgba(0,0,0,.15);
+    }
+    header .id{max-width:1100px;margin:0 auto;display:grid;gap:1rem;grid-template-columns:80px 1fr}
+    header img.logo{width:80px;height:80px;border-radius:16px;object-fit:cover;border:2px solid rgba(255,255,255,.6);background:#fff}
+    header h1{font-size:1.6rem;margin:.1rem 0 0;letter-spacing:.2px}
+    header p.role{margin:.25rem 0 0;font-weight:600;opacity:.95}
+    header .meta{font-size:.95rem;opacity:.95}
+    .links{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:.25rem}
+    .links a{color:#e0f7fa;text-decoration:none;background:rgba(255,255,255,.12);padding:.35rem .6rem;border-radius:999px;border:1px solid rgba(255,255,255,.25)}
+    nav{
+      background:var(--brand-2);
+      display:flex;justify-content:center;gap:.35rem;flex-wrap:wrap;
+      padding:.45rem .75rem;
+      position:sticky; top:126px; z-index:9;
+      box-shadow:0 4px 16px rgba(0,0,0,.1)
+    }
+    nav a{color:white;text-decoration:none;font-weight:700;padding:.4rem .7rem;border-radius:10px;opacity:.95}
+    nav a:hover,nav a.active{background:rgba(255,255,255,.15)}
+
+    main{max-width:1100px;margin:1.25rem auto;padding:1rem}
+    section{background:var(--card);border-radius:14px;padding:1.25rem 1.25rem;margin:0 0 1rem;box-shadow:0 2px 0 var(--ring), 0 16px 40px rgba(2, 55, 63,.07)}
+    h2{color:var(--brand);margin:.25rem 0 0.5rem}
+    .grid{display:grid;gap:1rem}
+    @media(min-width:900px){.grid.cols-2{grid-template-columns:1fr 1fr}}
+    .card{background:#fff;border:1px solid #eef1f4;border-radius:12px;padding:1rem}
+    .badge{display:inline-block;font-size:.8rem;background:#e0f2f1;padding:.15rem .5rem;border-radius:8px;margin-right:.35rem}
+    .kv{margin:.25rem 0 0}
+    .kv b{display:inline-block;min-width:140px;color:#375a5a}
+    ul{margin:.5rem 0 .25rem 1rem}
+    .muted{color:var(--muted)}
+    .button{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;padding:.6rem .9rem;border-radius:10px;font-weight:700;border:1px solid #013b33}
+    .button.secondary{background:#fff;color:var(--brand);border:1px solid var(--brand)}
+    .hero-note{background:#e0f2f1;border-left:4px solid var(--brand);padding:.75rem;border-radius:8px}
+    footer{padding:2rem 1rem 4rem;text-align:center;color:#5b6b73}
+    code.inline{background:#f1f5f9;border-radius:6px;padding:.1rem .35rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="id">
+      <img src="BatteryAI.png" class="logo" alt="BE Logo"/>
+      <div>
+        <h1>Benyamin Ebrahimpour, PhD, AFHEA</h1>
+        <p class="role">AI/ML Engineer · Battery Modelling · Bayesian Inference</p>
+        <p class="meta">Southsea, Portsmouth, UK · <a style="color:#c8f7ff" href="mailto:Benyamin.ebrahimpour@port.ac.uk">Benyamin.ebrahimpour@port.ac.uk</a> · <span class="muted">UK Driving License (Automatic)</span></p>
+        <div class="links">
+          <a href="https://uk.linkedin.com/in/benyamin-ebrahimpour" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=SFRMhvAAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a>
+          <a href="https://www.github.com/benyaminemp" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="BenyaminEbrahimpour%20CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav id="topnav">
+    <a href="#about" class="active">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#awards">Awards</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        I’m a highly motivated AI/ML engineer with a multidisciplinary background in machine learning, data science, and mathematical modelling. I hold a PhD in Mathematics and build neural network surrogate models and Bayesian inference pipelines for lithium‑ion battery systems. I enjoy shipping clean, production‑ready code and collaborating in cross‑functional teams.
+      </p>
+      <div class="hero-note">
+        <strong>Currently:</strong> Finalist (3rd place runner‑up) at the IGNITION Responsible AI Startup Hackathon for an AI‑based battery health monitoring solution, awarded $2,000 in AWS credits.
+      </div>
+    </section>
+
+    <section id="skills" class="grid cols-2">
+      <div class="card">
+        <h2>Core Stack</h2>
+        <p>
+          Python, R, SQL, PyTorch, NumPy/SciPy, GPyTorch, pandas, scikit‑learn, Tableau, Power BI, Excel, JavaScript, HTML/CSS, MATLAB, Maple, Fortran, C, PyBaMM, PyBOP.
+        </p>
+        <p class="muted">Also: PSO, MCMC/Metropolis, Bayesian UQ, Gaussian Processes, physics‑informed ML.</p>
+      </div>
+      <div class="card">
+        <h2>Domains</h2>
+        <p>Battery modelling (ECM & physics‑based), parameter estimation, uncertainty quantification, energy systems analytics, data visualisation, teaching & public engagement.</p>
+        <span class="badge">AI/ML</span>
+        <span class="badge">Batteries</span>
+        <span class="badge">Bayesian</span>
+        <span class="badge">Data Viz</span>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Data Analyst Intern · Victoria Solution (2025)</h3>
+          <p class="muted">London, UK</p>
+          <ul>
+            <li>Advanced analysis with Python/R/SQL; built interactive dashboards in Tableau & Power BI.</li>
+            <li>Sourced, cleaned and structured large datasets; presented insights to stakeholders.</li>
+            <li>Collaborated with industry mentors and data teams; delivered findings in feedback meetings.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Research Assistant · University of Portsmouth (2024–2025)</h3>
+          <ul>
+            <li>PSO + Bayesian inference with neural surrogates for parameter estimation (custom Python).</li>
+            <li>Applied PSO to inverse problems; MLE & MCMC (Metropolis) for UQ.</li>
+            <li>Built Li‑ion models with PyBaMM/PyBOP; integrated experiments and numerics in Git‑driven workflows.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>PhD Researcher · Battery Modelling & Surrogates (2021–2024)</h3>
+          <ul>
+            <li>Developed scalable neural surrogate models for Li‑ion batteries enabling ultra‑fast Bayesian inference.</li>
+            <li>Physics‑informed & supervised learning pipelines; Gaussian Processes with GPyTorch.</li>
+            <li>Reduced‑order blended‑electrode model (MATLAB finite volume) for control‑oriented simulation.</li>
+            <li>Collaborations with The Faraday Institution; national conferences and publications.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>BatteryGuard AI (Demo)</h3>
+          <p>AI‑powered health check for second‑life Li‑ion batteries. Includes model parameter inference via PSO + neural surrogates and an educational microsite.</p>
+          <a class="button" href="#batteryguard">Open demo section</a>
+          <a class="button secondary" href="https://github.com/benyaminemp/Li-ion-Batteries" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+        <div class="card">
+          <h3>EV Population Dashboard (Tableau)</h3>
+          <p>Interactive dashboard exploring EV population in Washington State — trends by brand, geography and registration year based on open data.</p>
+          <a class="button secondary" href="https://public.tableau.com/" target="_blank" rel="noreferrer">View Tableau</a>
+        </div>
+      </div>
+
+      <div class="card" id="batteryguard" style="margin-top:1rem">
+        <h3>BatteryGuard AI — Interactive Mini Demo</h3>
+        <p class="muted">For GitHub Pages, backend calls are disabled. This simulated demo previews the UI flow only.</p>
+        <div class="grid cols-2">
+          <div>
+            <h4>Upload CSV (simulated)</h4>
+            <input type="file" id="paramData" accept=".csv" />
+            <button onclick="simulateParamData()">Run Parameter Estimation</button>
+            <div id="results" class="card" style="margin-top:.75rem;background:#e8f5f4"></div>
+          </div>
+          <div>
+            <h4>What it does</h4>
+            <ul>
+              <li>Fits a Thévenin ECM to current/voltage data.</li>
+              <li>Uses a trained NN surrogate + PSO search.</li>
+              <li>Reports R0, R1, C1 and notes on fit quality.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications (selected)</h2>
+      <ul>
+        <li>Leveraging machine learning in porous media, <em>Journal of Materials Chemistry A</em>, 2024.</li>
+        <li>Multiple papers on solar desalination and energy systems in <em>Solar Energy</em>, <em>IJEST</em>, and <em>Environmental Science and Pollution Research</em>, 2022.</li>
+        <li>In preparation (2025): Bayesian inference for Thévenin ECM; Reduced‑order physics‑based model with blended electrodes.</li>
+      </ul>
+      <a class="button secondary" href="https://scholar.google.com/citations?user=SFRMhvAAAAAJ" target="_blank" rel="noreferrer">See Google Scholar</a>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul>
+        <li>Lecturer (Quantitative Methods, Logistics, Mathematics) — International College Portsmouth (2023–present)</li>
+        <li>Teaching Assistant (Python Programming; Maths for Finance; Derivative Pricing) — University of Portsmouth (2022–2023)</li>
+        <li>Maths Tutor — University of Portsmouth (2022–2024); Exam Invigilator (2021–2024)</li>
+      </ul>
+    </section>
+
+    <section id="awards">
+      <h2>Awards & Memberships</h2>
+      <ul>
+        <li>AFHEA (2025); IEEE Member; LMS Associate Member; IMechE Affiliate; RSS Member.</li>
+        <li>IGNITION Responsible AI Hackathon — Finalist (3rd place runner‑up), AWS credits awarded.</li>
+        <li>Global PhD Scholarship (University of Portsmouth); Association of Inventors Member.</li>
+      </ul>
+    </section>
+
+    <section id="education" class="grid cols-2">
+      <div class="card">
+        <h3>PhD, Mathematics — University of Portsmouth (2021–2025)</h3>
+        <p>Dissertation: Neural Network Surrogates for ultra‑fast Inference in Li‑ion battery models.</p>
+      </div>
+      <div class="card">
+        <h3>MSc, Mechanical Engineering — Sharif University of Technology (2019–2021)</h3>
+        <p>Top 2% on entry; GPA 18.53/20. Dissertation on solar desalination systems.</p>
+      </div>
+      <div class="card">
+        <h3>BSc, Mechanical Engineering — Babol Noshirvani Univ. of Technology (2014–2018)</h3>
+        <p>Top 8% (3rd Top Student). Dissertation on bio‑inspired underwater robots.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="kv"><b>Email</b> <a href="mailto:Benyamin.ebrahimpour@port.ac.uk">Benyamin.ebrahimpour@port.ac.uk</a></p>
+      <p class="kv"><b>Location</b> Southsea, Portsmouth, UK</p>
+      <p class="kv"><b>Links</b> <a href="https://uk.linkedin.com/in/benyamin-ebrahimpour" target="_blank" rel="noreferrer">LinkedIn</a> · <a href="https://scholar.google.com/citations?user=SFRMhvAAAAAJ" target="_blank" rel="noreferrer">Google Scholar</a> · <a href="https://github.com/benyaminemp" target="_blank" rel="noreferrer">GitHub</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    © <span id="y"></span> Benyamin Ebrahimpour · Built with vanilla HTML/CSS/JS · Deployed on GitHub Pages
+  </footer>
+
+  <script>
+    // Simple SPA-like nav highlighting
+    const nav = document.getElementById('topnav');
+    const links = [...nav.querySelectorAll('a')];
+    const setActive = () => {
+      const y = window.scrollY + 140;
+      for (const a of links){
+        const sec = document.querySelector(a.getAttribute('href'));
+        if(!sec) continue;
+        const top = sec.offsetTop, bottom = top + sec.offsetHeight;
+        a.classList.toggle('active', y >= top && y < bottom);
+      }
+    };
+    window.addEventListener('scroll', setActive);
+    window.addEventListener('load', () => { setActive(); document.getElementById('y').textContent = new Date().getFullYear();});
+
+    // Simulated parameter estimation for GitHub Pages demo
+    function simulateParamData(){
+      const file = document.getElementById('paramData').files[0];
+      if(!file){ alert('Please upload a .csv file'); return; }
+      const results = document.getElementById('results');
+      results.innerHTML = '<em>Running PSO + NN surrogate (simulated)...</em>';
+      setTimeout(()=>{
+        const R0 = (Math.random()*0.02 + 0.005).toFixed(5);
+        const R1 = (Math.random()*0.05 + 0.01).toFixed(5);
+        const C1 = (Math.random()*400 + 100).toFixed(2);
+        results.innerHTML = `
+          <h4>Estimated Parameters (Demo)</h4>
+          <p>R0: <strong>${R0} Ω</strong></p>
+          <p>R1: <strong>${R1} Ω</strong></p>
+          <p>C1: <strong>${C1} F</strong></p>
+          <p class="muted">Notes: Demo-only; for real results, connect a backend endpoint.</p>
+        `;
+      }, 900);
+    }
+  </script>
+</body>
+</html>
